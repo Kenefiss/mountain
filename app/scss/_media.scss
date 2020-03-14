@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .gallery__items {
+    grid-template-columns: repeat(1fr);
+    grid-template-areas:
+      'a  b  c'
+      'd  e  c'
+      'd  f  g';
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__item {
+    height: 420px;
+  }
+}
