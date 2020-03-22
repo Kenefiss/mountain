@@ -138,7 +138,6 @@
   line-height: 32px;
   letter-spacing: 0.18px;
   margin: 0 auto 50px;
-  padding: 0 10px;
 }
 
 .offer__cards {
@@ -469,7 +468,7 @@
 
 .footer__contacts-box {
   margin: 100px auto;
-  width: 380px;
+  max-width: 380px;
 }
 
 .footer__contacts-title {
@@ -531,38 +530,6 @@
   background-repeat: no-repeat;
   width: 66.6666%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @import "media";
