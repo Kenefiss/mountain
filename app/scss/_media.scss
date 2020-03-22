@@ -1,4 +1,172 @@
+@media (max-width: 1366px) {
+  .about__achievement-title {
+    padding: 90px 10px 0px;
+    max-width: 570px;
+    font-size: 45px;
+  }
+
+  .about__achievement-text {
+    max-width: 655px;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 10px 62px;
+  }
+
+  .about__achievement-stats {
+    padding: 0 10px 146px;
+  }
+
+  .stats-number {
+    font-size: 55px;
+  }
+
+  .stats-desc {
+    font-size: 14px;
+  }
+
+  .stats-item+.stats-item {
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .gallery__items {
+    height: auto;
+  }
+
+  .about__team-items {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .about__team-item+.about__team-item {
+      margin-left: 20px;
+    }
+
+    .about__team-item {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about__achievement-title {
+    padding: 50px 10px 0px;
+  }
+
+  .about__achievement-text {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px 10px;
+  }
+
+  .about__achievement-stats {
+    padding: 0 10px 70px;
+  }
+
+  .about__achievement {
+    background-position: left;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .gallery__item {
+    height: 500px;
+
+    &:nth-child(4) {
+      background-position: top;
+    }
+  }
+
+  .offer__title {
+    margin-bottom: 10px;
+  }
+
+  .offer__cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
+  .offer__card {
+    margin-bottom: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .offer__title {
+    font-size: 45px;
+  }
+
+  .gallery__items {
+    margin-bottom: 90px;
+  }
+
+  .about__team-items {
+    display: block;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  .about__team-title {
+    font-size: 45px;
+  }
+
+  .about__achievement-stats {
+    display: block;
+    text-align: center;
+
+    .stats-item {
+      padding: 0 0 30px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
+  .gallery__items {
+    grid-template-columns: repeat(1fr);
+    grid-template-areas:
+      'a  b'
+      'd  e'
+      'f  c'
+      'g  g';
+  }
+
+  .gallery__item {
+    height: 500px;
+
+    &:nth-child(4) {
+      background-position: top;
+    }
+  }
+
+}
+
+@media (min-width: 1112px) {
   .gallery__items {
     grid-template-columns: repeat(1fr);
     grid-template-areas:
@@ -6,10 +174,9 @@
       'd  e  c'
       'd  f  g';
   }
-}
 
-@media (max-width: 768px) {
   .gallery__item {
-    height: 420px;
+    height: auto;
+
   }
 }

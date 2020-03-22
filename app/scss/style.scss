@@ -46,11 +46,6 @@
   position: relative;
 }
 
-.wrapper {
-  max-width: 1260px;
-  margin: 0 auto;
-}
-
 .header-screen__title {
   margin-bottom: 44px;
   font-weight: $bold;
@@ -132,6 +127,7 @@
   text-transform: uppercase;
   letter-spacing: 0.6;
   margin: 100px 0 50px;
+  padding: 0 15px;
 }
 
 .offer__text {
@@ -142,6 +138,7 @@
   line-height: 32px;
   letter-spacing: 0.18px;
   margin: 0 auto 50px;
+  padding: 0 10px;
 }
 
 .offer__cards {
@@ -284,6 +281,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 165px;
+  padding: 0 10px;
 }
 
 .about__team-item {
@@ -379,11 +377,32 @@
 .testimonials__item {
   padding-bottom: 16px;
 
-  img {
+  .testimonials__img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     margin: 0 auto 23px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before {
+      content: url(../images/quote-left.png);
+      position: absolute;
+      width: 50px;
+      height: 36px;
+      left: -63px;
+      bottom: -13px;
+    }
+
+    &::after {
+      content: url(../images/quote-right.png);
+      position: absolute;
+      width: 50px;
+      height: 36px;
+      bottom: -13px;
+      right: -63PX;
+    }
   }
 }
 
