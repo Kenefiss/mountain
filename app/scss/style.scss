@@ -12,13 +12,30 @@
   background-size: cover;
 }
 
+.header__inner {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto 73px;
+}
+
 .header__top {
-  margin: 0 120px;
+  padding: 0 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
-  margin-bottom: 73px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  transition: all 1s;
+}
+
+.small {
+  width: 100%;
+  background-color: #406a97;
+  padding-top: 10px;
+  height: 70px;
+  opacity: .6;
 }
 
 .menu__list {
@@ -56,7 +73,7 @@
 }
 
 .header-screen__title.wow.fadeInUpBig,
-.header-screen__title-big.wow.fadeInUp {
+.header-screen__title-big.wow.fadeInUpBig {
   opacity: 0.4 !important;
 }
 
@@ -103,7 +120,7 @@
   background-repeat: no-repeat;
   width: 100%;
   position: absolute;
-  top: 241px;
+  top: 243px;
   z-index: 1;
   height: 784px;
 }
@@ -111,8 +128,66 @@
 .boarder-image {
   position: absolute;
   z-index: 2;
-  right: 60px;
-  top: 215px;
+  left: 46%;
+  bottom: 6%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.header__menu-btn {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: none;
+}
+
+.burger {
+  background: #fff;
+  width: 50px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    transition: .5s;
+  }
+
+  &:before {
+    top: -16px;
+    right: 0;
+  }
+
+  &:after {
+    top: 16px;
+    right: 0;
+  }
+}
+
+.header__menu-btn.active {
+  .burger {
+    background: transparent;
+
+    &:before {
+      top: 0;
+      transform: rotate(-315deg);
+    }
+
+    &:after {
+      top: 0;
+      transform: rotate(315deg);
+    }
+  }
 }
 
 //************* Offer *************

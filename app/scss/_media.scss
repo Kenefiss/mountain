@@ -40,7 +40,30 @@
   .contact__list {
     padding-bottom: 30px;
   }
+
+  .header__top {
+    padding: 10px 10px 0;
+  }
+
+  .header-screen__title {
+    font-size: 22px;
+  }
+
+  .header-screen__title-big {
+    font-size: 160px;
+  }
+
+  .mount-image {
+    top: 160px;
+  }
+
+  .header-screen__text,
+  .header-screen__btn {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
+
 
 @media (max-width: 1112px) {
   .gallery__items {
@@ -58,6 +81,10 @@
     .about__team-item {
       margin-bottom: 40px;
     }
+  }
+
+  .menu__list li+li {
+    padding-left: 30px;
   }
 }
 
@@ -112,9 +139,56 @@
   .footer__contacts-box {
     margin: 40px auto;
   }
+
+  .header-screen__title-big {
+    font-size: 140px;
+  }
+
+  .header__menu-btn {
+    display: block;
+  }
+
+  .header__menu {
+    width: auto;
+    text-align: right;
+
+    ul {
+      display: none;
+      position: absolute;
+      z-index: -1;
+      top: 70px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: #406a97;
+      box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24), 0px 1px 6.86px 0.14px rgba(0, 0, 0, 0.16);
+
+      li+li {
+        padding-left: 0;
+      }
+    }
+
+    li {
+      display: block;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      padding: 20px 0;
+      transition: all .3s;
+
+      &:hover {
+        background-color: #fff;
+        color: $orange;
+      }
+    }
+  }
+
+  .small {
+    opacity: 1;
+  }
 }
-
-
 
 @media (max-width: 768px) {
   .gallery__item {
@@ -141,6 +215,22 @@
     &::before {
       display: none;
     }
+  }
+
+  .boarder-image {
+    display: none;
+  }
+
+  .header-screen__title-big {
+    margin: 0 20px 152px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header-screen__btn {
+    margin-bottom: 140px;
+    left: 45%;
+    transform: translate(-50%);
   }
 }
 
@@ -178,6 +268,10 @@
 
   .testimonials__inner {
     padding-bottom: 100px;
+  }
+
+  .header-screen__title-big {
+    font-size: 110px;
   }
 }
 
