@@ -37,15 +37,19 @@ $(function () {
   });
 
   $('.header__menu-btn').on('click', function () {
-    $(this).toggleClass('active');
-    $('.menu__list').slideToggle(1112);
-  });
+      $(this).toggleClass('active');
+      $('.menu__list').slideToggle(1112);
+    }
+
+  );
 
   $(window).resize(function () {
-    if ($(window).width() > 1112) {
-      $('.menu__list').removeAttr('style');
+      if ($(window).width() > 1112) {
+        $('.menu__list').removeAttr('style');
+      }
     }
-  });
+
+  );
 
   $(window).scroll(function () {
     var sc = $(window).scrollTop()
