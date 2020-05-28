@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://Kenefiss.github.io/mountain",
   "scripts": {
+    "deploy": "gh-pages -d app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Taras Shevchenko",
@@ -22,6 +24,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
+    "gh-pages": "^2.2.0",
     "jquery-counter": "^1.0.2",
     "wow.js": "^1.2.2"
   }
