@@ -558,14 +558,14 @@
 .contact__list {
   font-family: $text;
   padding-bottom: 73px;
-  position: relative;
 
   li {
     padding-left: 30px;
+    position: relative;
   }
 
   li+li {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 
   a {
@@ -575,36 +575,36 @@
     &:hover {
       color: $orange;
     }
+
   }
 
-  i {
+  svg {
+    width: 15px;
     position: absolute;
     left: 0;
-    color: $orange;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: $orange;
   }
 }
 
-.sicail__list {
+.social__list {
   display: flex;
   justify-content: space-between;
 
-  li {
-    font-size: 28px;
+  svg {
+    width: 25px;
     cursor: pointer;
+    fill: #fff;
 
     &:hover {
-      color: $orange;
+      fill: $orange;
     }
   }
 }
 
 .footer__map {
-  background-image: url(../images/map-2.jpg);
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 66.6666%;
 }
-
 
 @import "media";
