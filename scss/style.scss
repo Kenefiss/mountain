@@ -574,7 +574,6 @@
     &:hover {
       color: $orange;
     }
-
   }
 
   svg {
@@ -603,13 +602,11 @@
 }
 
 .footer__map {
-  flex-basis: 66.666%;
+  width: 66.666%;
   position: relative;
 
 
   iframe {
-    // height: 100%;
-    // width: 100%;
     border: none;
 
     position: absolute;
