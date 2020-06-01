@@ -211,7 +211,7 @@
   font-family: $text;
   font-size: 18px;
   line-height: 32px;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.4px;
   margin: 0 auto 50px;
 }
 
@@ -300,37 +300,30 @@
     'g';
 
   .gallery__item:nth-child(1) {
-    background-image: url(../images/gallery/gallery-img-1.jpg);
     grid-area: a;
   }
 
   .gallery__item:nth-child(2) {
-    background-image: url(../images/gallery/gallery-img-2.jpg);
     grid-area: b;
   }
 
   .gallery__item:nth-child(3) {
-    background-image: url(../images/gallery/gallery-img-3.jpg);
     grid-area: c;
   }
 
   .gallery__item:nth-child(4) {
-    background-image: url(../images/gallery/gallery-img-4.jpg);
     grid-area: d;
   }
 
   .gallery__item:nth-child(5) {
-    background-image: url(../images/gallery/gallery-img-5.jpg);
     grid-area: e;
   }
 
   .gallery__item:nth-child(6) {
-    background-image: url(../images/gallery/gallery-img-6.jpg);
     grid-area: f;
   }
 
   .gallery__item:nth-child(7) {
-    background-image: url(../images/gallery/gallery-img-7.jpg);
     grid-area: g;
   }
 
@@ -398,6 +391,7 @@
   font-weight: $bold;
   font-size: 60px;
   letter-spacing: 0.6px;
+  margin-bottom: 20px;
 }
 
 .about__achievement-text {
@@ -406,7 +400,12 @@
   font-size: 18px;
   color: $grey;
   line-height: 32px;
-  padding-bottom: 62px;
+  letter-spacing: 0.3px;
+  padding-bottom: 80px;
+
+  p+p {
+    margin-top: 17px;
+  }
 }
 
 .about__achievement-stats {
