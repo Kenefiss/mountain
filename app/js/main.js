@@ -12,7 +12,7 @@ $(function () {
 
   var a = 0;
   $(window).scroll(function () {
-    var oTop = $('#counter').offset().top - window.innerHeight;
+    var oTop = $('.stats-item').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
       $('.stats-number').each(function () {
         var $this = $(this),
