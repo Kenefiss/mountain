@@ -603,7 +603,21 @@
 }
 
 .footer__map {
-  width: 66.6666%;
+  flex-basis: 66.666%;
+  position: relative;
+
+
+  iframe {
+    // height: 100%;
+    // width: 100%;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 @import "media";
